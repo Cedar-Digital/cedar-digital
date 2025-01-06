@@ -133,7 +133,7 @@ export default function Features() {
                   href={company.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`relative group cursor-pointer overflow-hidden rounded-2xl ${company.bgClass} border border-white/10 p-6 md:p-8 lg:p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:border-white/20`}
+                  className={`relative group cursor-pointer overflow-hidden rounded-2xl ${company.bgClass} border border-white p-6 md:p-8 lg:p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:border-white`}
                 >
                   <div className="relative z-10">
                     <div className="flex items-center mb-3 md:mb-4">
