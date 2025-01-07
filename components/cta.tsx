@@ -26,7 +26,7 @@ export default function Cta() {
               <div className="inline-flex font-medium text-white pb-3">The security first platform</div>
             </div>
             <h2 className="h2 text-white pb-4">Take control of your business</h2>
-            <p className="text-lg text-white mb-8">All the lorem ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+            <p className="text-lg text-white mb-8">Ready to take your business to the next level? Partner with Cedar Digital and let’s transform your vision into measurable success. Get in touch today to start building your future!</p>
             <div>
               <a className="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white transition duration-150 ease-in-out group" href="#0">
                 Get Started <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>

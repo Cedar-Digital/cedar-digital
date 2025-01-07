@@ -10,7 +10,7 @@ import Features02 from '@/components/features-02'
 import Features03 from '@/components/features-03'
 import TestimonialsCarousel from '@/components/testimonials-carousel'
 import Features04 from '@/components/features-04'
-import Pricing from './pricing-section'
+import Team from '@/components/team'
 import Testimonials from '@/components/testimonials'
 import Cta from '@/components/cta'
 import Story from '@/components/story'
@@ -22,10 +22,11 @@ export default function Home() {
       <Clients />
       <Features />
       <Story />
-      <Features02 />
-      <Features03 />
+      <Team />
+
+
       <TestimonialsCarousel />
-      <Features04 />
+
       <Testimonials />
       <Cta />
     </>
