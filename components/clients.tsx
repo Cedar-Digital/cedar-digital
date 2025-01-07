@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import Particles from './particles'
 
-import Client01 from '@/public/images/client-01.svg'
-import Client02 from '@/public/images/client-02.svg'
-import Client03 from '@/public/images/client-03.svg'
-import Client04 from '@/public/images/client-04.svg'
-import Client05 from '@/public/images/client-05.svg'
-import Client06 from '@/public/images/client-06.svg'
-import Client07 from '@/public/images/client-07.svg'
-import Client08 from '@/public/images/client-08.svg'
-import Client09 from '@/public/images/client-09.svg'
+// Importing the new client images
+import Client01 from '@/public/images/Logos-01.png'
+import Client02 from '@/public/images/Logos-02.png'
+import Client03 from '@/public/images/Logos-03.png'
+import Client04 from '@/public/images/Logos-04.png'
+import Client05 from '@/public/images/Logos-05.png'
+import Client06 from '@/public/images/Logos-06.png'
+import Client07 from '@/public/images/Logos-07.png'
+import Client08 from '@/public/images/Logos-08.png'
 
 const logos = [
   { src: Client01, alt: "Client 01" },
@@ -20,7 +20,6 @@ const logos = [
   { src: Client06, alt: "Client 06" },
   { src: Client07, alt: "Client 07" },
   { src: Client08, alt: "Client 08" },
-  { src: Client09, alt: "Client 09" },
 ];
 
 export default function Clients() {
@@ -36,20 +35,20 @@ export default function Clients() {
         <div className="py-12 md:py-16">
           <div className="overflow-hidden">
             <div className="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-              <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+              <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4">
                 {logos.map((logo, index) => (
                   <li key={index}>
-                    <Image src={logo.src} alt={logo.alt} />
+                    <Image src={logo.src} alt={logo.alt} width={100} height={100} />
                   </li>
                 ))}
               </ul>
               <ul
-                className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+                className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4"
                 aria-hidden="true"
               >
                 {logos.map((logo, index) => (
                   <li key={index}>
-                    <Image src={logo.src} alt={logo.alt} />
+                    <Image src={logo.src} alt={logo.alt} width={100} height={100} />
                   </li>
                 ))}
               </ul>
