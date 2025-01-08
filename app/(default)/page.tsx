@@ -23,10 +23,7 @@ export default function Home() {
       <Features />
       <Story />
       <Team />
-
-
       <TestimonialsCarousel />
-
       <Testimonials />
       <Cta />
     </>

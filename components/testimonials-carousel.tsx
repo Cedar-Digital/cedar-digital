@@ -54,118 +54,76 @@ export default function TestimonialsCarousel() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <div>
-              <div className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-white pb-3">The security first platform</div>
+              <div className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-white pb-3">Our Services</div>
             </div>
-            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Spot issues faster</h2>
-            <p className="text-lg text-slate-400">All the lorem ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">What's Possible</h2>
+            <p className="text-lg text-slate-400">Discover the range of services we provide to help your business thrive in the digital landscape.</p>
           </div>
 
-          {/* Carousel built with Swiper.js [https://swiperjs.com/] */}
-          {/* * Custom styles in src/css/additional-styles/theme.scss */}
+          {/* Carousel built with Swiper.js */}
           <div className="relative before:absolute before:inset-0 before:-translate-x-full before:z-20 before:bg-gradient-to-l before:from-transparent before:to-slate-900 before:to-20% after:absolute after:inset-0 after:translate-x-full after:z-20 after:bg-gradient-to-r after:from-transparent after:to-slate-900 after:to-20%">
             <div className="stellar-carousel swiper-container group">
               <Highlighter className="swiper-wrapper w-fit" refresh={swiperInitialized}>
                 {/* Carousel items */}
-                <HighlighterItem className="swiper-slide h-auto group/slide">
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    {/* Particles animation */}
-                    <Particles className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" quantity={3} refresh={swiperInitialized} /> 
-                    {/* Radial gradient */}
-                    <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-white transition-colors duration-500 ease-in-out blur-[60px]" />
-                    </div>
-                    <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg01} width={56} height={56} alt="Icon 01" />
-                      <div className="grow">
-                        <div className="font-bold text-lg mb-1">Anonymous User</div>
-                        <div className="text-slate-400 mb-3">Incorporate rich user profiling, and facilitate more transactions.</div>
+                {[
+                  {
+                    img: CarouselImg04,
+                    title: "Custom Software Solutions",
+                    description: "Streamline your business with bespoke applications and platforms designed to meet your unique needs and enhance efficiency.",
+                  },
+                  {
+                    img: CarouselImg01,
+                    title: "Targeted Paid Marketing",
+                    description: "Boost your reach with precise paid ad campaigns tailored to your audience. From Meta Ads to Google PPC, we ensure your message lands where it matters most.",
+                  },
+                  {
+                    img: CarouselImg05,
+                    title: "FPV Drone Footage",
+                    description: "Take your marketing to new heights with stunning drone footage – perfect for capturing unique perspectives and creating standout content.",
+                  },
+                  {
+                    img: CarouselImg02,
+                    title: "Content Creation that Converts",
+                    description: "From scroll-stopping visuals to engaging videos, we craft content that drives action and elevates your brand.",
+                  },
+                  {
+                    img: CarouselImg03,
+                    title: "Social Media Campaigns",
+                    description: "Grow your online presence with powerful campaigns – paid influencer partnerships, organic strategies, and end-to-end management for all platforms.",
+                  },
+                  {
+                    img: CarouselImg05,
+                    title: "Website Development",
+                    description: "Your digital storefront matters. We design and develop websites that not only look great but drive conversions and reflect your brand identity.",
+                  },
+                ].map((item, idx) => (
+                  <HighlighterItem key={idx} className="swiper-slide h-auto group/slide">
+                    <div className="relative h-full bg-black rounded-[inherit] z-20 overflow-hidden min-h-[350px]">
+                      <Particles
+                        className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out"
+                        quantity={3}
+                        refresh={swiperInitialized}
+                      />
+                      <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                        <div className="absolute inset-0 translate-z-0 rounded-full bg-white group-[.swiper-slide-active]/slide:bg-black transition-colors duration-500 ease-in-out blur-[60px]" />
                       </div>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </HighlighterItem>
-                <HighlighterItem className="swiper-slide h-auto group/slide">
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    {/* Particles animation */}
-                    <Particles className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" quantity={3} refresh={swiperInitialized} />                     
-                    {/* Radial gradient */}
-                    <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-white transition-colors duration-500 ease-in-out blur-[60px]" />
-                    </div>
-                    <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg02} width={56} height={56} alt="Icon 01" />
-                      <div className="grow">
-                        <div className="font-bold text-lg mb-1">Bot Detection</div>
-                        <div className="text-slate-400 mb-3">Incorporate rich user profiling, and facilitate more transactions.</div>
-                      </div>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </HighlighterItem>
-                <HighlighterItem className="swiper-slide h-auto group/slide">
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    {/* Particles animation */}
-                    <Particles className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" quantity={3} refresh={swiperInitialized} />                     
-                    {/* Radial gradient */}
-                    <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-white transition-colors duration-500 ease-in-out blur-[60px]" />
-                    </div>
-                    <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg03} width={56} height={56} alt="Icon 01" />
-                      <div className="grow">
-                        <div className="font-bold text-lg mb-1">Social integrations</div>
-                        <div className="text-slate-400 mb-3">Incorporate rich user profiling, and facilitate more transactions.</div>
-                      </div>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </HighlighterItem>
-                <HighlighterItem className="swiper-slide h-auto group/slide">
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    {/* Particles animation */}
-                    <Particles className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" quantity={3} refresh={swiperInitialized} />                     
-                    {/* Radial gradient */}
-                    <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-white transition-colors duration-500 ease-in-out blur-[60px]" />
-                    </div>
-                    <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg04} width={56} height={56} alt="Icon 01" />
-                      <div className="grow">
-                        <div className="font-bold text-lg mb-1">Progressive Profiling</div>
-                        <div className="text-slate-400 mb-3">Incorporate rich user profiling, and facilitate more transactions.</div>
-                      </div>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                      <div className="flex flex-col p-6 h-full space-y-4 relative">
+                        <Image className="mb-3" src={item.img} width={56} height={56} alt={item.title} />
+                        <div className="grow space-y-2">
+                          <div className="font-bold text-lg mb-1">{item.title}</div>
+                          <div className="text-slate-400 mb-3">{item.description}</div>
+                        </div>
+                        <div className="flex-grow"></div>
+                        <div className="absolute bottom right-6">
+                          <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">
+                            Learn More
+                            <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </HighlighterItem>
-                <HighlighterItem className="swiper-slide h-auto group/slide">
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    {/* Particles animation */}
-                    <Particles className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" quantity={3} refresh={swiperInitialized} />                     
-                    {/* Radial gradient */}
-                    <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-white transition-colors duration-500 ease-in-out blur-[60px]" />
-                    </div>
-                    <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg05} width={56} height={56} alt="Icon 05" />
-                      <div className="grow">
-                        <div className="font-bold text-lg mb-1">Secure Access</div>
-                        <div className="text-slate-400 mb-3">Incorporate rich user profiling, and facilitate more transactions.</div>
-                      </div>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </HighlighterItem>
+                  </HighlighterItem>
+                ))}
               </Highlighter>
             </div>
           </div>

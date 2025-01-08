@@ -113,7 +113,7 @@ export default function Testimonials() {
                     leaveTo="opacity-0 translate-x-4"
                     beforeEnter={() => heightFix()}
                   >
-                    <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200/60 via-gray-200 to-gray-200/60">{item.quote}</div>
+                    <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white/60 via-white to-white/60">{item.quote}</div>
                   </Transition>
                 ))}
 
@@ -123,9 +123,9 @@ export default function Testimonials() {
             <div className="flex flex-wrap justify-center -m-1.5">
 
               {items.map((item, index) => (
-                <button className={`btn-sm m-1.5 text-xs py-1.5 text-gray-300 transition duration-150 ease-in-out [background:linear-gradient(theme(colors.gray.900),_theme(colors.gray.900))_padding-box,_conic-gradient(theme(colors.gray.400),_theme(colors.gray.700)_25%,_theme(colors.gray.700)_75%,_theme(colors.gray.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-gray-800/30 before:rounded-full before:pointer-events-none ${active === index ? 'opacity-100' : 'opacity-30 hover:opacity-60'}`} key={index} onClick={() => { setActive(index); setAutorotate(false); }}>
+                <button className={`btn-sm m-1.5 text-xs py-1.5 text-white transition duration-150 ease-in-out [background:linear-gradient(theme(colors.gray.900),_theme(colors.gray.900))_padding-box,_conic-gradient(theme(colors.gray.400),_theme(colors.gray.700)_25%,_theme(colors.gray.700)_75%,_theme(colors.gray.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-gray-800/30 before:rounded-full before:pointer-events-none ${active === index ? 'opacity-100' : 'opacity-30 hover:opacity-60'}`} key={index} onClick={() => { setActive(index); setAutorotate(false); }}>
                   <span className="relative">
-                    <span className="text-gray-50">{item.name}</span> <span className="text-gray-600">-</span> <span>{item.role}</span>
+                    <span className="text-white">{item.name}</span> <span className="text-white">-</span> <span>{item.role}</span>
                   </span>
                 </button>
               ))}
