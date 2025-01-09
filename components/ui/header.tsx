@@ -1,8 +1,11 @@
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Logo from './logo'
 import MobileMenu from './mobile-menu'
 
 export default function Header() {
+  const currentPath = usePathname();
+
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -19,13 +22,28 @@ export default function Header() {
             {/* Desktop menu links */}
             <ul className="flex grow justify-center flex-wrap items-center">
               <li>
-                <Link className="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/about">About</Link>
+                <Link 
+                  className={`font-medium text-sm mx-4 lg:mx-5 transition duration-150 ease-in-out ${currentPath === '/about' ? 'text-white underline' : 'text-slate-300 hover:text-white'}`} 
+                  href="/about"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/customers">Customers</Link>
+                <Link 
+                  className={`font-medium text-sm mx-4 lg:mx-5 transition duration-150 ease-in-out ${currentPath === '/customers' ? 'text-white underline' : 'text-slate-300 hover:text-white'}`} 
+                  href="/customers"
+                >
+                  Customers
+                </Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/changelog">Contact</Link>
+                <Link 
+                  className={`font-medium text-sm mx-4 lg:mx-5 transition duration-150 ease-in-out ${currentPath === '/contact' ? 'text-white underline' : 'text-slate-300 hover:text-white'}`} 
+                  href="/contact"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
 
