@@ -51,7 +51,7 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-white bg-black hover:bg-gray-800 w-full transition duration-150 ease-in-out group"
-                  href="#0"
+                  href="/contact"
                 >
                   Contact{" "}
                   <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -62,7 +62,7 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-black hover:text-black bg-gray-100 hover:bg-gray-200 w-full transition duration-150 ease-in-out"
-                  href="#0"
+                  href="/join"
                 >
                   <svg
                     className="shrink-0 fill-black mr-3"
