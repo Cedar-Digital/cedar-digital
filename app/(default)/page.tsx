@@ -22,7 +22,6 @@ export default function Home() {
       <Clients />
       <Features />
       <Story />
-     
       <TestimonialsCarousel />
       <Testimonials />
       <Cta />
