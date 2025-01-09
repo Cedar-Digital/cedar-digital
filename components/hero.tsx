@@ -29,19 +29,7 @@ export default function Hero() {
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6" data-aos="fade-down">
-              <div className="inline-flex relative before:absolute before:inset-0 before:bg-black before:blur-md">
-                <a
-                  className="btn-sm py-0.5 text-white hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.black),_theme(colors.black))_padding-box,_linear-gradient(theme(colors.black),_theme(colors.gray.500)_75%,_theme(colors.transparent)_100%)_border-box] relative before:absolute before:inset-0 before:bg-black/90 before:rounded-full before:pointer-events-none shadow"
-                  href="#0"
-                >
-                  <span className="relative inline-flex items-center">
-                    API Studio is now in beta{" "}
-                    <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-              </div>
+
             </div>
             <h1 className="h1 text-white pb-4" data-aos="fade-down">
               Welcome to Cedar Digital
@@ -65,7 +53,7 @@ export default function Hero() {
                   className="btn text-white bg-black hover:bg-gray-800 w-full transition duration-150 ease-in-out group"
                   href="#0"
                 >
-                  Get Started{" "}
+                  Contact{" "}
                   <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
@@ -84,7 +72,7 @@ export default function Hero() {
                   >
                     <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
                   </svg>
-                  <span>Read the docs</span>
+                  <span>Join Our Team</span>
                 </a>
               </div>
             </div>

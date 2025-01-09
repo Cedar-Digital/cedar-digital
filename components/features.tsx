@@ -86,6 +86,32 @@ export default function Features() {
       ),
       bgClass: "bg-black",
     },
+    {
+      id: 4,
+      name: "Coming Soon",
+      tagline: "Exciting New Ventures",
+      description:
+        "Stay tuned for our upcoming projects that will revolutionize the industry. We're working on something big and can't wait to share it with you.",
+      features: [
+        "Innovative Solutions",
+        "Cutting-edge Technology",
+        "Industry Leadership",
+        "Global Impact",
+      ],
+      website: "#",
+      icon: (
+        <svg
+          className="shrink-0 fill-white mr-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.524 4.477 10 10 10s10-4.476 10-10c0-5.523-4.477-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-5-8a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+        </svg>
+      ),
+      bgClass: "bg-black",
+    },
   ];
 
   return (
@@ -126,14 +152,14 @@ export default function Features() {
             </div>
 
             {/* Companies grid */}
-            <div className="grid md:grid-cols-3 gap-8 md:gap-6 lg:gap-12">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-6 lg:gap-12">
               {companies.map((company) => (
                 <a
                   key={company.id}
                   href={company.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`relative group cursor-pointer overflow-hidden rounded-2xl ${company.bgClass} border border-white p-6 md:p-8 lg:p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:border-white`}
+                  className={`relative group cursor-pointer overflow-hidden rounded-2xl ${company.bgClass} border border-white p-8 md:p-10 lg:p-12 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:border-white`}
                 >
                   <div className="relative z-10">
                     <div className="flex items-center mb-3 md:mb-4">

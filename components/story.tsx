@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Team from '@/public/images/Josh.png'
+import PageIllustration from '@/public/images/page-illustration.svg'
 
 export default function Story() {
   return (
-    <section className="relative bg-black text-white">
+    <section className="relative bg-transparent text-white">
 
       {/* Blurred shape */}
       <div className="absolute top-0 -mt-32 left-1/2 -translate-x-1/2 ml-10 blur-2xl opacity-70 pointer-events-none -z-10" aria-hidden="true">
@@ -16,6 +17,11 @@ export default function Story() {
           </defs>
           <path fill="url(#bs4-a)" fillRule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)"></path>
         </svg>
+      </div>
+
+      {/* Page Illustration */}
+      <div className="absolute bottom-0 right-0 opacity-50 pointer-events-none -z-10" aria-hidden="true">
+        <Image src={PageIllustration} alt="Page Illustration" />
       </div>
 
       <div className="px-4 sm:px-6">
