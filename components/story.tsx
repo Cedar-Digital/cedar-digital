@@ -40,23 +40,21 @@ export default function Story() {
               <div className="max-w-[548px] mx-auto">
                 <div className="text-white space-y-6">
                   <p>
-                    Hi, I’m Joshua Joseph, the founder of Cedar Digital. My journey into the digital space began during my varsity years, where I studied Computer Science and discovered my passion for innovation and problem-solving. With a vision to create impactful digital solutions, I launched Cedar Digital—a company that has since evolved into a holding company for all the projects I embark on.
+                    Hi, I’m Joshua Joseph, the founder of Cedar Digital. My journey into the digital space began during my varsity years, where I studied Computer Science and discovered my passion for innovation and problem-solving. I launched Cedar Digital as a company that has since evolved into a holding company for all the projects I embark on.
                   </p>
                   <p>
                     Cedar Digital is the umbrella under which our ventures thrive, and I’m proud to call Earth Service Marketers (ESM) and Inflame our two flagship projects.
                   </p>
                   <p>
-                    ESM specializes in advertising for earth-moving equipment and outdoor services, bringing niche expertise and tailored marketing strategies to clients in industries that are often overlooked. It’s a testament to how precision and focus can drive outstanding results.
+                    ESM specializes in advertising for earth-moving equipment and outdoor services, bringing niche expertise and tailored marketing strategies to clients in industries that are often overlooked.
                   </p>
                   <p>
-                    Inflame, on the other hand, is our influencer marketing platform—a cutting-edge solution that connects businesses with influencers to create authentic, impactful campaigns. This project represents our commitment to staying ahead in the dynamic world of digital marketing and building platforms that foster meaningful connections.
+                    Inflame, on the other hand, is our influencer marketing platform—a cutting-edge solution that connects businesses with influencers to create authentic, impactful campaigns. (Soon to be launched)
                   </p>
                   <p>
                     At Cedar Digital, we are dedicated to transforming ideas into thriving ventures. Whether it’s crafting bespoke marketing campaigns, scaling businesses, or pioneering new platforms, our focus is always on creating sustainable success.
                   </p>
-                  <p>
-                    For me, this journey is far from over. I’m driven by the challenge of scaling these ventures and exploring what’s next. Thank you for being a part of our story—I can’t wait to see how we can grow together!
-                  </p>
+
                 </div>
               </div>
             </div>

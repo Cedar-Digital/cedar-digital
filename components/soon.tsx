@@ -38,6 +38,16 @@ export default function ComingSoon() {
             >
               We are working hard to bring you something amazing. Stay tuned for updates!
             </p>
+            <p
+              className="text-lg text-white/80 mb-8"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              Interested in joining our team? Email your CV to{' '}
+              <a href="mailto:joshua@cedardigitalconsulting.com" className="text-white underline">
+                joshua@cedardigitalconsulting.com
+              </a>
+            </p>
           </div>
         </div>
       </div>
