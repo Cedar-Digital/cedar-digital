@@ -1,9 +1,3 @@
-import Image from 'next/image'
-import Recruitment01 from '@/public/images/recruitment-01.jpg'
-import Recruitment02 from '@/public/images/recruitment-02.jpg'
-import Recruitment03 from '@/public/images/recruitment-03.jpg'
-import Recruitment04 from '@/public/images/recruitment-04.jpg'
-
 interface Item {
   area: string
   positions: {
@@ -17,63 +11,38 @@ export default function Recruitment() {
 
   const items: Item[] = [
     {
-      area: 'Engineering',
+      area: 'Software',
       positions: [
         {
-          title: 'Software Engineering Intern',
-          location: 'Remote / North America',
-          link: '#0',
+          title: 'Software Developer',
+          location: 'Remote / Johannesburg',
+          link: '/join',
         },
+      ]
+    },
+    {
+      area: 'Marketing',  
+      positions: [
         {
-          title: 'Software Engineer, Core Infrastructure',
+          title: 'Marketing Account Manager',
           location: 'Remote',
-          link: '#0',
-        },
-        {
-          title: 'Software Engineer, Data Platform',
-          location: 'Remote / Europe',
-          link: '#0',
-        },
-        {
-          title: 'Software Engineer, Marketing Systems',
-          location: 'Remote / North America',
-          link: '#0',
+          link: '/join',
         },
       ]
     },
     {
-      area: 'Marketing',
+      area: 'Design & Content',
       positions: [
-        {
-          title: 'Product Marketing Manager',
-          location: 'Remote / North America',
-          link: '#0',
-        },
-        {
-          title: 'Marketing Manager',
-          location: 'Remote / Europe',
-          link: '#0',
-        },
-      ]
-    },
-    {
-      area: 'Design',
-      positions: [
-        {
-          title: 'Product Designer, Consumer',
-          location: 'Remote / North America',
-          link: '#0',
-        },
-        {
-          title: 'Senior Product Designer',
-          location: 'Remote / Europe',
-          link: '#0',
-        },
-        {
-          title: 'Lead Designer',
-          location: 'Remote / Europe',
-          link: '#0',
-        },
+          {
+            title: 'Graphic Designer',
+            location: 'Remote',
+            link: '/join',
+          },
+          {
+            title: 'Videographer & Editor',
+            location: 'Remote / Johannesburg / Cape Town',
+            link: '/join',
+          }
       ]
     },
   ]
@@ -86,8 +55,8 @@ export default function Recruitment() {
         <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
           <defs>
             <linearGradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
-              <stop offset="0%" stopColor="#6366F1" />
-              <stop offset="100%" stopColor="#6366F1" stopOpacity="0" />
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
             </linearGradient>
           </defs>
           <path fill="url(#bs3-a)" fillRule="evenodd" d="m410 0 461 369-284 58z" transform="matrix(1 0 0 -1 -410 427)" />
@@ -104,7 +73,7 @@ export default function Recruitment() {
           </div>
 
           {/* Icons with text */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-10 max-w-xs mx-auto md:max-w-none -m-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 max-w-xs mx-auto md:max-w-none -m-5">
             {/* Block #1 */}
             <div className="text-center p-5">
               <div className="inline-flex items-center justify-center h-12 w-12 rounded-full border border-transparent [background:linear-gradient(theme(colors.slate.800),_theme(colors.slate.800))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] mb-3">
@@ -126,7 +95,7 @@ export default function Recruitment() {
                 </svg>
               </div>
               <div className="font-bold text-slate-100 mb-1">Energetic</div>
-              <p className="text-sm text-slate-400">You are passionate about digital products of any kind and are a builder at heart.</p>
+              <p className="text-sm text-slate-400">You bring energy and enthusiasm to every project, inspiring those around you.</p>
             </div>
             {/* Block #3 */}
             <div className="text-center p-5">
@@ -139,20 +108,10 @@ export default function Recruitment() {
                 </svg>
               </div>
               <div className="font-bold text-slate-100 mb-1">Achiever</div>
-              <p className="text-sm text-slate-400">You are passionate about digital products of any kind and are a builder at heart.</p>
+              <p className="text-sm text-slate-400">You strive for excellence and consistently achieve your goals, setting new standards.</p>
             </div>
           </div>
 
-        </div>
-      </div>
-
-      {/* Images */}
-      <div className="max-w-[1440px] mx-auto px-4 md:px-0">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 md:-mx-5">
-          <Image className="w-full aspect-[16/10] object-cover rounded-lg" src={Recruitment01} width={352} height={220} alt="Recruitment 01" />
-          <Image className="w-full aspect-[16/10] object-cover rounded-lg" src={Recruitment02} width={352} height={220} alt="Recruitment 02" />
-          <Image className="w-full aspect-[16/10] object-cover rounded-lg" src={Recruitment03} width={352} height={220} alt="Recruitment 03" />
-          <Image className="w-full aspect-[16/10] object-cover rounded-lg" src={Recruitment04} width={352} height={220} alt="Recruitment 04" />
         </div>
       </div>
 
@@ -164,8 +123,8 @@ export default function Recruitment() {
           <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
             <defs>
               <linearGradient id="bs2-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
-                <stop offset="0%" stopColor="#6366F1"></stop>
-                <stop offset="100%" stopColor="#6366F1" stopOpacity="0"></stop>
+                <stop offset="0%" stopColor="#FFFFFF"></stop>
+                <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0"></stop>
               </linearGradient>
             </defs>
             <path fill="url(#bs2-a)" fillRule="evenodd" d="m346 898 461 369-284 58z" transform="translate(-346 -898)"></path>
@@ -178,13 +137,13 @@ export default function Recruitment() {
 
             {items.map((item, index) => (
               <div key={index}>
-                <h4 className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-3">{item.area}</h4>
+                <h4 className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-white pb-3">{item.area}</h4>
                 <ul className="divide-y divide-slate-800">
                   {
                     item.positions.map((position, index) => (
                       <li key={index} className="flex flex-col md:flex-row flex-wrap justify-between py-5">
                         <span className="font-medium text-slate-50 mr-2">{position.title}</span>
-                        <a className="inline-flex text-sm font-medium text-purple-500 group" href={position.link}>{position.location} <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                        <a className="inline-flex text-sm font-medium text-white group" href={position.link}>{position.location} <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
                       </li>
                     ))
                   }

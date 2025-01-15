@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'About - Stellar',
-  description: 'Page description',
+  title: 'About - Cedar Digital',
+  description: 'About Cedar Digital',
 }
 
 import Hero from '@/components/hero-about'
@@ -14,10 +14,9 @@ export default function About() {
   return (
     <>
       <Hero />
-      <Story />
+
       <Team />
       <Recruitment />
-      <Testimonials />
       <Cta />
     </>
   )

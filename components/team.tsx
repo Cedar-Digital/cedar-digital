@@ -1,25 +1,9 @@
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
-import Member01 from '@/public/images/team-01.png'
-import Member02 from '@/public/images/team-02.png'
-import Member03 from '@/public/images/team-03.png'
-import Member04 from '@/public/images/team-04.png'
-import Member05 from '@/public/images/team-05.png'
-import Member06 from '@/public/images/team-06.png'
-import Member07 from '@/public/images/team-07.png'
-import Member08 from '@/public/images/team-08.png'
-import Member09 from '@/public/images/team-09.png'
-import Member10 from '@/public/images/team-10.png'
-import Member11 from '@/public/images/team-11.png'
-import Member12 from '@/public/images/team-12.png'
-import Member13 from '@/public/images/team-13.png'
-import Member14 from '@/public/images/team-14.png'
-import Member15 from '@/public/images/team-15.png'
-import Member16 from '@/public/images/team-16.png'
-import Member17 from '@/public/images/team-17.png'
-import Member18 from '@/public/images/team-18.png'
-import Member19 from '@/public/images/team-19.png'
-import Member20 from '@/public/images/team-20.png'
+import Member01 from '@/public/images/Gianna.png'
+import Member02 from '@/public/images/Jacques.png'
+import Member03 from '@/public/images/Kait.png'
+
 
 interface Item {
   img: StaticImageData
@@ -49,12 +33,6 @@ export default function Team() {
       role: 'Account Manager',
       twitter: '#0',
     },
-    {
-      img: Member04,
-      name: 'Dian Delport',
-      role: 'Videographer & Editor',
-      twitter: '#0',
-    },
   ]
 
   return (
@@ -73,7 +51,7 @@ export default function Team() {
             <p className="text-lg text-white">Without their unwavering commitment and expertise, I wouldn't have been able to achieve what I have today. Their dedication and passion have been instrumental in our success.</p>
           </div>
           {/* Team members */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-6">
+          <div className="flex flex-col sm:flex-row justify-around gap-6">
             {items.map((item, index) => ( 
               <div key={index} className="relative flex items-center justify-between py-4 pl-4 pr-3 group before:absolute before:inset-0 before:-z-10 before:border before:border-slate-300 before:bg-slate-700 before:opacity-0 hover:before:opacity-10 focus-within:before:opacity-10 before:rounded-xl before:transition-opacity">
                 <div className="flex items-center space-x-4">
