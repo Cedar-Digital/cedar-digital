@@ -116,48 +116,49 @@ export default function TestimonialsCarousel() {
                     key={idx}
                     className="swiper-slide h-auto group/slide"
                   >
-                    <div className="relative h-full bg-black rounded-[inherit] z-20 overflow-hidden min-h-[350px]">
-                      <Particles
-                        className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out"
-                        quantity={3}
-                        refresh={swiperInitialized}
-                      />
-                      <div
-                        className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square"
-                        aria-hidden="true"
-                      >
-                        <div className="absolute inset-0 translate-z-0 rounded-full bg-white group-[.swiper-slide-active]/slide:bg-black transition-colors duration-500 ease-in-out blur-[60px]" />
-                      </div>
-                      <div className="flex flex-col p-6 h-full space-y-4 relative">
-                        <Image
-                          className="mb-3"
-                          src={item.img}
-                          width={56}
-                          height={56}
-                          alt={item.title}
+                    <a href="/contact" className="block h-full">
+                      <div className="relative h-full bg-black rounded-[inherit] z-20 overflow-hidden min-h-[350px]">
+                        <Particles
+                          className="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out"
+                          quantity={3}
+                          refresh={swiperInitialized}
                         />
-                        <div className="grow space-y-2">
-                          <div className="font-bold text-lg mb-1">
-                            {item.title}
-                          </div>
-                          <div className="text-slate-400 mb-3">
-                            {item.description}
-                          </div>
+                        <div
+                          className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square"
+                          aria-hidden="true"
+                        >
+                          <div className="absolute inset-0 translate-z-0 rounded-full bg-white group-[.swiper-slide-active]/slide:bg-black transition-colors duration-500 ease-in-out blur-[60px]" />
                         </div>
-                        <div className="flex-grow"></div>
-                        <div className="absolute bottom right-6">
-                          <a
-                            className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group"
-                            href="#0"
-                          >
-                            Learn More
-                            <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                              -&gt;
+                        <div className="flex flex-col p-6 h-full space-y-4 relative">
+                          <Image
+                            className="mb-3"
+                            src={item.img}
+                            width={56}
+                            height={56}
+                            alt={item.title}
+                          />
+                          <div className="grow space-y-2">
+                            <div className="font-bold text-lg mb-1">
+                              {item.title}
+                            </div>
+                            <div className="text-slate-400 mb-3">
+                              {item.description}
+                            </div>
+                          </div>
+                          <div className="flex-grow"></div>
+                          <div className="absolute bottom right-6">
+                            <span
+                              className="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group"
+                            >
+                              Learn More
+                              <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                                -&gt;
+                              </span>
                             </span>
-                          </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </HighlighterItem>
                 ))}
               </Highlighter>
