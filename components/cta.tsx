@@ -32,6 +32,11 @@ export default function Cta() {
                 Get Started <span className="tracking-normal text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
               </a>
             </div>
+            <div className="mt-4">
+              <a className="text-white underline hover:text-gray-300 transition duration-150 ease-in-out" href="/privacy-policy">
+                Privacy Policy
+              </a>
+            </div>
           </div>
         </div>
       </div>
