@@ -19,6 +19,9 @@ const PrivacyPolicy = () => {
         <li>Usage data (IP address, browser type, device information, etc.)</li>
         <li>Cookies and tracking technologies</li>
       </ul>
+      <p className="mb-4">
+        All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+      </p>
       
       <h2 className="text-2xl font-semibold mt-6 mb-2">2. How We Use Your Information</h2>
       <p className="mb-4">
