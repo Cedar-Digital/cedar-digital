@@ -59,59 +59,33 @@ export default function Features() {
         </svg>
       ),
       bgClass: "bg-black",
-    },
-    {
-      id: 3,
-      name: "Bear Claw Media",
-      tagline: "Land Management Marketing Specialists",
-      description:
-        "Dedicated to helping land management and heavy equipment businesses grow online. We specialize in turning outdoor service providers into industry leaders through proven digital strategies that consistently deliver high-value projects.",
-      features: [
-        "Social Media Management",
-        "SEO Optimization",
-        "Facebook Ads",
-        "Website Design",
-      ],
-      website: "https://gobearclawmedia.com/",
-      icon: (
-        <svg
-          className="shrink-0 fill-white mr-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V19c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-8.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 5.831c0 1.114-.903 2.021-2.021 2.021-1.488 0-2.112-.812-2.664-1.541-.645-.849-1.313-1.726-2.812-1.726-1.5 0-2.168.877-2.813 1.726-.552.729-1.176 1.541-2.665 1.541C5.903 9.852 5 8.945 5 7.831V5c0-.552.449-1 1-1h12c.551 0 1 .448 1 1v2.831zm-1 11.169c0 .552-.449 1-1 1H6c-.551 0-1-.448-1-1v-7.26c.499.072.989.109 1.49.109 2.267 0 3.336-1.103 4.005-1.949.451-.571.707-.851 1.008-.851.3 0 .557.28 1.008.851.669.846 1.738 1.949 4.005 1.949.501 0 .991-.037 1.49-.109V19z" />
-        </svg>
-      ),
-      bgClass: "bg-black",
-    },
-    {
-      id: 4,
-      name: "Coming Soon",
-      tagline: "Exciting New Ventures",
-      description:
-        "Stay tuned for our upcoming projects that will revolutionize the industry. We're working on something big and can't wait to share it with you.",
-      features: [
-        "Innovative Solutions",
-        "Cutting-edge Technology",
-        "Industry Leadership",
-        "Global Impact",
-      ],
-      website: "#",
-      icon: (
-        <svg
-          className="shrink-0 fill-white mr-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.524 4.477 10 10 10s10-4.476 10-10c0-5.523-4.477-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-5-8a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg>
-      ),
-      bgClass: "bg-black",
-    },
+    }
+    // {
+    //   id: 4,
+    //   name: "Coming Soon",
+    //   tagline: "Exciting New Ventures",
+    //   description:
+    //     "Stay tuned for our upcoming projects that will revolutionize the industry. We're working on something big and can't wait to share it with you.",
+    //   features: [
+    //     "Innovative Solutions",
+    //     "Cutting-edge Technology",
+    //     "Industry Leadership",
+    //     "Global Impact",
+    //   ],
+    //   website: "#",
+    //   icon: (
+    //     <svg
+    //       className="shrink-0 fill-white mr-3"
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       width="24"
+    //       height="24"
+    //       viewBox="0 0 24 24"
+    //     >
+    //       <path d="M12 2C6.477 2 2 6.477 2 12c0 5.524 4.477 10 10 10s10-4.476 10-10c0-5.523-4.477-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-5-8a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+    //     </svg>
+    //   ),
+    //   bgClass: "bg-black",
+    // },
   ];
 
   return (
