@@ -27,12 +27,6 @@ export default function Team() {
       role: 'Videographer & Editor',
       twitter: '#0',
     },
-    {
-      img: Member03,
-      name: 'Kaitlyn Van Der Schyff',
-      role: 'Account Manager',
-      twitter: '#0',
-    },
   ]
 
   return (
