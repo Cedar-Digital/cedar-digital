@@ -5,7 +5,7 @@ export const metadata = {
   
   import Hero from '@/components/hero'
   import Clients from '@/components/clients'
-  import Features from '@/components/features'
+  import Features from '@/components/about'
   import TestimonialsCarousel from '@/components/testimonials-carousel'
   import Testimonials from '@/components/testimonials'
   import Cta from '@/components/cta'

@@ -28,23 +28,23 @@ export default function ComingSoon() {
         <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Coming Soon content */}
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="h1 text-white pb-4" data-aos="fade-down">
+            <h1 className="h1 text-black pb-4" data-aos="fade-down">
               Coming Soon
             </h1>
             <p
-              className="text-lg text-white/80 mb-8"
+              className="text-lg text-black mb-8"
               data-aos="fade-down"
               data-aos-delay="200"
             >
               We are working hard to bring you something amazing. Stay tuned for updates!
             </p>
             <p
-              className="text-lg text-white/80 mb-8"
+              className="text-lg text-black mb-8"
               data-aos="fade-down"
               data-aos-delay="400"
             >
               Interested in joining our team? Email your CV to{' '}
-              <a href="mailto:joshua@cedardigitalconsulting.com" className="text-white underline">
+              <a href="mailto:joshua@cedardigitalconsulting.com" className="text-black underline">
                 joshua@cedardigitalconsulting.com
               </a>
             </p>

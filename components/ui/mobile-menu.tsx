@@ -1,13 +1,28 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Link from 'next/link'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+
+  // Smooth scrolling handler
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const offset = window.pageYOffset || document.documentElement.scrollTop;
+      const topPosition = rect.top + offset;
+
+      window.scrollTo({
+        top: topPosition,
+        behavior: 'smooth',
+      });
+      setMobileNavOpen(false);
+    }
+  };
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -31,17 +46,17 @@ export default function MobileMenu() {
   })
 
   return (
-    <div className="md:hidden flex items-center ml-4">
+    <div className="md:hidden flex items-center justify-center ml-4">
       {/* Hamburger button */}
       <button
         ref={trigger}
-        className={`group inline-flex w-8 h-8 text-slate-300 hover:text-white text-center items-center justify-center transition`}
+        className={`group inline-flex w-8 h-8 text-black hover:text-white text-center items-center justify-center transition`}
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <span className="sr-only">Menu</span>
-        <svg className="w-4 h-4 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-4 h-4 fill-current text-black pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <rect 
             className="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] -translate-y-[5px] group-[[aria-expanded=true]]:rotate-[315deg] group-[[aria-expanded=true]]:translate-y-0"
             y="7" 
@@ -73,15 +88,15 @@ export default function MobileMenu() {
         className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
-        <ul className="border border-transparent [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] rounded-lg px-4 py-1.5">
+        <ul className="border border-transparent bg-white rounded-lg px-4 py-1.5 flex flex-col items-center">
           <li>
-            <Link className="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="/">Home</Link>
+            <button className="flex font-medium text-sm text-black hover:text-gray-300 py-1.5" onClick={() => handleScroll('hero')}>Home</button>
           </li>
           <li>
-            <Link className="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="/about">About</Link>
+            <button className="flex font-medium text-sm text-black hover:text-gray-300 py-1.5" onClick={() => handleScroll('about')}>About</button>
           </li>
           <li>
-            <Link className="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="/contact">Contact</Link>
+            <button className="flex font-medium text-sm text-black hover:text-gray-300 py-1.5" onClick={() => handleScroll('contact')}>Contact</button>
           </li>
         </ul>
       </nav>

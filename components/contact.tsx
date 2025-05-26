@@ -28,8 +28,8 @@ export default function Hero() {
         <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6" data-aos="fade-down">Schedule a Call</h2>
-            <div className="mb-17" data-aos="fade-down">
+            <h2 className="text-3xl font-bold mb-6 text-black" data-aos="fade-down">Schedule a Call</h2>
+            <div className="mb-17 text-black" data-aos="fade-down">
               {/* Calendar iframe */}
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/VFq5bKrRGXDIZ5Km2Xcj"

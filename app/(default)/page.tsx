@@ -5,7 +5,7 @@ export const metadata = {
 
 import Hero from '@/components/hero'
 import Clients from '@/components/clients'
-import Features from '@/components/features'
+import About from '@/components/about'
 import Features02 from '@/components/features-02'
 import Features03 from '@/components/features-03'
 import TestimonialsCarousel from '@/components/testimonials-carousel'
@@ -14,17 +14,33 @@ import Team from '@/components/team'
 import Testimonials from '@/components/testimonials'
 import Cta from '@/components/cta'
 import Story from '@/components/story'
+import Footer from '@/components/ui/footer'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Clients />
-      <Features />
-      <Story />
-      <TestimonialsCarousel />
-      <Testimonials />
-      <Cta />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="clients">
+        <Clients />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="story">
+        <Story />
+      </div>
+      <div id="testimonials-carousel">
+        <TestimonialsCarousel />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="cta">
+        <Cta />
+      </div>
+      <Footer />
     </>
   )
 }

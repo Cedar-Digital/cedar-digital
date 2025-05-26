@@ -1,30 +1,30 @@
-import Image from 'next/image'
-import Particles from './particles'
+import Image from 'next/image';
+import Particles from './particles';
 
 // Importing the new client images
-import Client01 from '@/public/images/Logos-01.png'
-import Client02 from '@/public/images/Logos-02.png'
-import Client03 from '@/public/images/Logos-03.png'
-import Client04 from '@/public/images/Logos-04.png'
-import Client05 from '@/public/images/Logos-05.png'
-import Client06 from '@/public/images/Logos-06.png'
-import Client07 from '@/public/images/Logos-07.png'
-import Client08 from '@/public/images/Logos-08.png'
+import Client01 from '@/public/images/Logos-01.png';
+import Client02 from '@/public/images/Logos-02.png';
+import Client03 from '@/public/images/Logos-03.png';
+import Client04 from '@/public/images/Logos-04.png';
+import Client05 from '@/public/images/Logos-05.png';
+import Client06 from '@/public/images/Logos-06.png';
+import Client07 from '@/public/images/Logos-07.png';
+import Client08 from '@/public/images/Logos-08.png';
 
 const logos = [
-  { src: Client01, alt: "Client 01" },
-  { src: Client02, alt: "Client 02" },
-  { src: Client03, alt: "Client 03" },
-  { src: Client04, alt: "Client 04" },
-  { src: Client05, alt: "Client 05" },
-  { src: Client06, alt: "Client 06" },
-  { src: Client07, alt: "Client 07" },
-  { src: Client08, alt: "Client 08" },
+  { src: Client01, alt: 'Client 01' },
+  { src: Client02, alt: 'Client 02' },
+  { src: Client03, alt: 'Client 03' },
+  { src: Client04, alt: 'Client 04' },
+  { src: Client05, alt: 'Client 05' },
+  { src: Client06, alt: 'Client 06' },
+  { src: Client07, alt: 'Client 07' },
+  { src: Client08, alt: 'Client 08' },
 ];
 
 export default function Clients() {
   return (
-    <section>
+    <section className="bg-white">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Particles animation */}
@@ -57,5 +57,5 @@ export default function Clients() {
         </div>
       </div>
     </section>
-  )
+  );
 }

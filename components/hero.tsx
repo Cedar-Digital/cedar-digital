@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import Particles from './particles'
-import Illustration from '@/public/images/glow-bottom.svg'
+import Image from 'next/image';
+import Particles from './particles';
+import Illustration from '@/public/images/glow-bottom.svg';
 
 export default function Hero() {
   return (
-    <section>
+    <section className="bg-white">
       <div className="relative w-full px-4 sm:px-6">
         {/* Particles animation */}
         <Particles className="absolute inset-0 -z-10" />
@@ -28,21 +28,21 @@ export default function Hero() {
         <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-6" data-aos="fade-down">
+            <div className="mb-6" data-aos="fade-down"></div>
 
-            </div>
-            <h1 className="h1 text-white pb-4" data-aos="fade-down">
+            <h1 className="h1 text-black pb-4" data-aos="fade-down">
               Welcome to Cedar Digital
             </h1>
             <p
-              className="text-lg text-white/80 mb-8"
+              className="text-lg text-black/70 mb-8"
               data-aos="fade-down"
               data-aos-delay="200"
             >
               Cedar Digital was born as a consultancy dedicated to building and
               scaling businesses, providing innovative strategies and solutions
-              to help brands thrive in a competitive landscape.{" "}
+              to help brands thrive in a competitive landscape.
             </p>
+
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
               data-aos="fade-down"
@@ -50,7 +50,7 @@ export default function Hero() {
             >
               <div>
                 <a
-                  className="btn text-white bg-black hover:bg-gray-800 w-full transition duration-150 ease-in-out group"
+                  className="btn text-white bg-black hover:bg-gray-900 w-full transition duration-150 ease-in-out group"
                   href="/contact"
                 >
                   Contact{" "}
@@ -61,7 +61,7 @@ export default function Hero() {
               </div>
               <div>
                 <a
-                  className="btn text-black hover:text-black bg-gray-100 hover:bg-gray-200 w-full transition duration-150 ease-in-out"
+                  className="btn text-white bg-black/10 hover:bg-black/20 w-full transition duration-150 ease-in-out"
                   href="/join"
                 >
                   <svg
@@ -72,7 +72,7 @@ export default function Hero() {
                   >
                     <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
                   </svg>
-                  <span>Join Our Team</span>
+                  <span className="text-black">Join Our Team</span>
                 </a>
               </div>
             </div>
