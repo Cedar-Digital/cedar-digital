@@ -1,3 +1,5 @@
+'use client';
+
 import Particles from './particles';
 
 export default function Philosophy() {
