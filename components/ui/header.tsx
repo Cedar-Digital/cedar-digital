@@ -11,7 +11,7 @@ export default function Header() {
     if (element) {
       const rect = element.getBoundingClientRect();
       const offset = window.pageYOffset || document.documentElement.scrollTop;
-      const topPosition = rect.top + offset;
+      const topPosition = rect.top + offset - 80; // Account for fixed header
 
       window.scrollTo({
         top: topPosition,
@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white px-3 shadow-lg backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-black/20 before:[background:linear-gradient(theme(colors.white),theme(colors.white))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(black_0_0)_padding-box,_linear-gradient(black_0_0)]">
+        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 backdrop-blur-md px-3 shadow-lg border border-white/20 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-black/5">
           
           {/* Site branding */}
           <div className="flex flex-1 items-center">
@@ -35,8 +35,8 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
               <li>
                 <button
-                  onClick={() => handleScroll('hero')}
-                  className="flex items-center transition text-black/70 hover:text-black"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="flex items-center transition text-slate-600 hover:text-slate-900 font-medium"
                 >
                   Home
                 </button>
@@ -44,15 +44,23 @@ export default function Header() {
               <li>
                 <button
                   onClick={() => handleScroll('about')}
-                  className="flex items-center transition text-black/70 hover:text-black"
+                  className="flex items-center transition text-slate-600 hover:text-slate-900 font-medium"
                 >
-                  About
+                  About Joshua
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleScroll('companies')}
+                  className="flex items-center transition text-slate-600 hover:text-slate-900 font-medium"
+                >
+                  Our Companies
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => handleScroll('contact')}
-                  className="flex items-center transition text-black/70 hover:text-black"
+                  className="flex items-center transition text-slate-600 hover:text-slate-900 font-medium"
                 >
                   Contact
                 </button>
@@ -63,12 +71,12 @@ export default function Header() {
           {/* CTA */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link
-                href="/join"
-                className="btn-sm bg-black text-white hover:bg-gray-900 transition"
+              <button
+                onClick={() => handleScroll('contact')}
+                className="btn-sm bg-slate-900 text-white hover:bg-slate-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                Join Cedar
-              </Link>
+                Let's Connect
+              </button>
             </li>
           </ul>
 
