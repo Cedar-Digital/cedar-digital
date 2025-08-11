@@ -1,23 +1,45 @@
 export const metadata = {
-  title: 'Cedar Digital - The Holding Company for Joshua Joseph\'s Ventures',
-  description: 'From bold ideas to scalable ventures — building the future, one company at a time. Cedar Digital is the holding company for innovative ventures including Earth Service Marketers and Inflame.',
+  title: 'Cedar Digital',
+  description: 'Cedar Digital was born as a consultancy dedicated to building and scaling businesses, providing innovative strategies and solutions to help brands thrive in a competitive landscape.',
 }
 
 import Hero from '@/components/hero'
-import AboutJoshua from '@/components/about-joshua'
-import CompaniesPortfolio from '@/components/companies-portfolio'
-import Philosophy from '@/components/philosophy'
-import ContactCollaborate from '@/components/contact-collaborate'
+import Clients from '@/components/clients'
+import About from '@/components/about'
+import Features02 from '@/components/features-02'
+import Features03 from '@/components/features-03'
+import TestimonialsCarousel from '@/components/testimonials-carousel'
+import Features04 from '@/components/features-04'
+import Team from '@/components/team'
+import Testimonials from '@/components/testimonials'
+import Cta from '@/components/cta'
+import Story from '@/components/story'
 import Footer from '@/components/ui/footer'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutJoshua />
-      <CompaniesPortfolio />
-      <Philosophy />
-      <ContactCollaborate />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="clients">
+        <Clients />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="story">
+        <Story />
+      </div>
+      <div id="testimonials-carousel">
+        <TestimonialsCarousel />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="cta">
+        <Cta />
+      </div>
       <Footer />
     </>
   )
